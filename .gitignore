@@ -1,0 +1,20 @@
+# generated outputs (re-created by the scripts)
+NCT_paper_pipeline/02_cache/
+NCT_paper_pipeline/04_outputs/
+NCT_paper_pipeline/renv_lib/
+Manuscript_Revision_2026-07/gsea_rebuild/results/
+Manuscript_Revision_2026-07/gsea_rebuild/figures/
+Figures_4_6_Catalog30/figures/
+Figure3_signature_analysis_report/figures/
+Day7_Treated_Signature_Applied_to_Untreated/results/
+Day7_Treated_Signature_Applied_to_Untreated/tables/
+Day7_Treated_Signature_Applied_to_Untreated/figures/
+Supplementary_Figure_Day7_Transfer/data/
+Supplementary_Figure_Day7_Transfer/tables/
+Supplementary_Figure_Day7_Transfer/figures/
+analysis_results/
+revision_figures/figures/
+revision_figures/*.xlsx
+.Rhistory
+.DS_Store
+Rplots.pdf

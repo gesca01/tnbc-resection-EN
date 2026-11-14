@@ -1,0 +1,31 @@
+timepoint,group,copies_per_uL,source
+Resection,Survivor,0.11,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,Survivor,1.25,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,Survivor,0.57,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,Survivor,0.23,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,Survivor,0.23,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,Survivor,1.25,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,NonSurvivor,5.80,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,NonSurvivor,8.63,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,NonSurvivor,3.17,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,NonSurvivor,0.23,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,NonSurvivor,7.93,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Resection,NonSurvivor,3.18,data_raw/dpcr/20260522NCT_Day18_20260522T185215_M01KL232400185_summary.csv
+Week 1,Survivor,0.45,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,Survivor,0.91,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,Survivor,0.79,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,Survivor,0.45,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,Survivor,1.81,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,Survivor,0.11,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,NonSurvivor,6.24,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,NonSurvivor,4.09,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,NonSurvivor,2.15,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,NonSurvivor,1.25,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,NonSurvivor,7.39,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 1,NonSurvivor,2.04,data_raw/dpcr/20260507 Escalona Week1_20260507T162146_M01KL232400443_summary.csv
+Week 8,Survivor,0.00,week 8 dPCR run (survivors only)
+Week 8,Survivor,0.00,week 8 dPCR run (survivors only)
+Week 8,Survivor,0.91,week 8 dPCR run (survivors only)
+Week 8,Survivor,0.11,week 8 dPCR run (survivors only)
+Week 8,Survivor,0.11,week 8 dPCR run (survivors only)
+Week 8,Survivor,0.11,week 8 dPCR run (survivors only)

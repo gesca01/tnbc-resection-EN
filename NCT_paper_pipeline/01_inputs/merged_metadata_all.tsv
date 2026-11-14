@@ -1,0 +1,135 @@
+Core_Sample_Id	Sample_Name	Batch	Timepoint	Treatment	Death_Date	Survival_Status
+12864-GE-1	A1_week0	batch_1	Day18	y	1/14/25	non-survivor
+12864-GE-2	A2_week0	batch_1	Day18	y	1/22/25	non-survivor
+12864-GE-3	A3_week0	batch_1	Day18	y	NA	survivor
+12864-GE-4	A4_week0	batch_1	Day18	y	1/6/25	non-survivor
+12864-GE-5	A5_week0	batch_1	Day18	y	12/31/25	non-survivor
+12864-GE-6	B1_week0	batch_1	Day18	y	NA	survivor
+12864-GE-7	B2_week0	batch_1	Day18	y	NA	survivor
+12864-GE-8	B3_week0	batch_1	Day18	y	NA	survivor
+12864-GE-9	B4_week0	batch_1	Day18	y	NA	survivor
+12864-GE-10	C1_week0	batch_1	Day18	y	NA	unknown
+12864-GE-11	C2_week0	batch_1	Day18	y	1/25/25	non-survivor
+12864-GE-12	C3_week0	batch_1	Day18	y	NA	survivor
+12864-GE-13	C4_week0	batch_1	Day18	y	1/21/25	non-survivor
+12864-GE-14	C5_week0	batch_1	Day18	y	NA	survivor
+12864-GE-15	D1_week0	batch_1	Day18	n	12/27/25	non-survivor
+12864-GE-16	D2_week0	batch_1	Day18	n	1/16/25	non-survivor
+12864-GE-17	D3_week0	batch_1	Day18	n	1/16/25	non-survivor
+12864-GE-18	D4_week0	batch_1	Day18	n	NA	survivor
+12864-GE-19	D5_week0	batch_1	Day18	n	1/17/25	non-survivor
+12864-GE-20	E1_week0	batch_1	Day18	n	1/16/25	non-survivor
+12864-GE-21	E2_week0	batch_1	Day18	n	12/30/25	non-survivor
+12864-GE-22	E3_week0	batch_1	Day18	n	NA	survivor
+12864-GE-23	E4_week0	batch_1	Day18	n	1/16/25	non-survivor
+12864-GE-24	E5_week0	batch_1	Day18	n	NA	survivor
+12864-GE-25	R1_week0	batch_1	Day18	n	NA	survivor
+12864-GE-26	R2_week0	batch_1	Day18	n	NA	survivor
+12864-GE-27	R3_week0	batch_1	Day18	n	NA	survivor
+12864-GE-28	R4_week0	batch_1	Day18	n	NA	survivor
+12864-GE-29	R5_week0	batch_1	Day18	n	NA	survivor
+12864-GE-30	R6_week0	batch_1	Day18	n	NA	survivor
+12864-GE-31	H1_week0	batch_1	Day18	n	NA	healthy
+12864-GE-32	H2_week0	batch_1	Day18	n	NA	healthy
+12864-GE-33	H3_week0	batch_1	Day18	n	NA	healthy
+12864-GE-34	H4_week0	batch_1	Day18	n	NA	healthy
+12864-GE-35	H5_week0	batch_1	Day18	n	NA	healthy
+12864-GE-36	H6_week0	batch_1	Day18	n	NA	healthy
+12864-GE-37	H7_week0	batch_1	Day18	n	NA	healthy
+12864-GE-38	A3_week8	batch_1	Week8	y	NA	survivor
+12864-GE-39	B1_week8	batch_1	Week8	y	NA	survivor
+12864-GE-40	B2_week8	batch_1	Week8	y	NA	survivor
+12864-GE-41	B3_week8	batch_1	Week8	y	NA	survivor
+12864-GE-42	B4_week8	batch_1	Week8	y	NA	survivor
+12864-GE-43	C3_week8	batch_1	Week8	y	NA	survivor
+12864-GE-44	C5_week8	batch_1	Week8	y	NA	survivor
+12864-GE-45	D4_week8	batch_1	Week8	n	NA	survivor
+12864-GE-46	E3_week8	batch_1	Week8	n	NA	survivor
+12864-GE-47	E5_week8	batch_1	Week8	n	NA	survivor
+14124-GE-1	NS T1 D18	batch_2	Day18	y	4/15/25	non-survivor
+14124-GE-2	NS T2 D18	batch_2	Day18	y	4/27/25	non-survivor
+14124-GE-3	NS T3 D18	batch_2	Day18	y	4/13/25	non-survivor
+14124-GE-4	S T1 D18	batch_2	Day18	y	NA	survivor
+14124-GE-5	S T2 D18	batch_2	Day18	y	NA	survivor
+14124-GE-6	S T3 D18	batch_2	Day18	y	NA	survivor
+14124-GE-7	NS UT1 D18	batch_2	Day18	n	5/5/25	non-survivor
+14124-GE-8	NS UT2 D18	batch_2	Day18	n	4/15/25	non-survivor
+14124-GE-9	NS UT3 D18	batch_2	Day18	n	4/29/25	non-survivor
+14124-GE-10	S UT1 D18	batch_2	Day18	n	NA	survivor
+14124-GE-11	S UT2 D18	batch_2	Day18	n	NA	survivor
+14124-GE-12	S UT3 D18	batch_2	Day18	n	NA	survivor
+14124-GE-13	S T1 D7	batch_2	Day7	y	NA	survivor
+14124-GE-14	S T2 D7	batch_2	Day7	y	NA	survivor
+14124-GE-15	S T3 D7	batch_2	Day7	y	NA	survivor
+14124-GE-16	S T4 D7	batch_2	Day7	y	NA	survivor
+14124-GE-17	S T5 D7	batch_2	Day7	y	NA	survivor
+14124-GE-18	S T6 D7	batch_2	Day7	y	NA	survivor
+14124-GE-19	S UT1 D7	batch_2	Day7	n	NA	survivor
+14124-GE-20	S UT2 D7	batch_2	Day7	n	NA	survivor
+14124-GE-21	S UT3 D7	batch_2	Day7	n	NA	survivor
+14124-GE-22	S UT4 D7	batch_2	Day7	n	NA	survivor
+14124-GE-23	S UT5 D7	batch_2	Day7	n	NA	survivor
+14124-GE-24	S UT6 D7	batch_2	Day7	n	NA	survivor
+14124-GE-25	NS T1 D7	batch_2	Day7	y	4/15/25	non-survivor
+14124-GE-26	NS T2 D7	batch_2	Day7	y	4/27/25	non-survivor
+14124-GE-27	NS T3 D7	batch_2	Day7	y	4/13/25	non-survivor
+14124-GE-28	NS T4 D7	batch_2	Day7	y	4/5/25	non-survivor
+14124-GE-29	NS T5 D7	batch_2	Day7	y	4/22/25	non-survivor
+14124-GE-30	NS T6 D7	batch_2	Day7	y	4/1/25	non-survivor
+14124-GE-31	NS UT1 D7	batch_2	Day7	n	5/5/25	non-survivor
+14124-GE-32	NS UT2 D7	batch_2	Day7	n	4/15/25	non-survivor
+14124-GE-33	NS UT3 D7	batch_2	Day7	n	4/29/25	non-survivor
+14124-GE-34	NS UT4 D7	batch_2	Day7	n	4/8/25	non-survivor
+14124-GE-35	NS UT5 D7	batch_2	Day7	n	3/26/25	non-survivor
+14124-GE-36	S T1 W1	batch_2	Week1	y	NA	survivor
+14124-GE-37	S T2 W1	batch_2	Week1	y	NA	survivor
+14124-GE-38	S T3 W1	batch_2	Week1	y	NA	survivor
+14124-GE-39	S T4 W1	batch_2	Week1	y	NA	survivor
+14124-GE-40	S T5 W1	batch_2	Week1	y	NA	survivor
+14124-GE-41	S T6 W1	batch_2	Week1	y	NA	survivor
+14124-GE-42	S UT1 W1	batch_2	Week1	n	NA	survivor
+14124-GE-43	S UT2 W1	batch_2	Week1	n	NA	survivor
+14124-GE-44	S UT3 W1	batch_2	Week1	n	NA	survivor
+14124-GE-45	S UT4 W1	batch_2	Week1	n	NA	survivor
+14124-GE-46	NS T5 W1	batch_2	Week1	y	4/22/25	non-survivor
+14124-GE-48	NS T2 W1	batch_2	Week1	y	4/27/25	non-survivor
+14124-GE-49	NS T3 W1	batch_2	Week1	y	4/13/25	non-survivor
+14124-GE-50	NS T4 W1	batch_2	Week1	y	4/5/25	non-survivor
+14124-GE-51	NS T5 W1	batch_2	Week1	y	4/22/25	non-survivor
+14124-GE-52	NS UT1 W1	batch_2	Week1	n	5/5/25	non-survivor
+14124-GE-53	NS UT2 W1	batch_2	Week1	n	4/15/25	non-survivor
+14124-GE-54	NS UT3 W1	batch_2	Week1	n	4/29/25	non-survivor
+14124-GE-55	NS UT4 W1	batch_2	Week1	n	4/8/25	non-survivor
+14124-GE-56	NS UT5 W1	batch_2	Week1	n	3/26/25	non-survivor
+14124-GE-57	S T1 W4	batch_2	Week4	y	NA	survivor
+14124-GE-58	S T2 W4	batch_2	Week4	y	NA	survivor
+14124-GE-59	S T3 W4	batch_2	Week4	y	NA	survivor
+14124-GE-60	S T4 W4	batch_2	Week4	y	NA	survivor
+14124-GE-61	S T5 W4	batch_2	Week4	y	NA	survivor
+14124-GE-62	S T6 W4	batch_2	Week4	y	NA	survivor
+14124-GE-63	S UT1 W4	batch_2	Week4	n	NA	survivor
+14124-GE-64	S UT2 W4	batch_2	Week4	n	NA	survivor
+14124-GE-65	S UT3 W4	batch_2	Week4	n	NA	survivor
+14124-GE-66	S UT4 W4	batch_2	Week4	n	NA	survivor
+14124-GE-67	NS T1 (W-3)	batch_2	Week-3	y	4/15/25	non-survivor
+14124-GE-68	NS T2 (W-3)	batch_2	Week-3	y	4/27/25	non-survivor
+14124-GE-69	NS T3 (W-3)	batch_2	Week-3	y	4/13/25	non-survivor
+14124-GE-70	NS T5 (W-3)	batch_2	Week-3	y	4/22/25	non-survivor
+14124-GE-71	NS UT1 (W-3)	batch_2	Week-3	n	5/5/25	non-survivor
+14124-GE-72	NS UT2 (W-3)	batch_2	Week-3	n	4/15/25	non-survivor
+14124-GE-73	NS UT3 (W-3)	batch_2	Week-3	n	4/29/25	non-survivor
+14124-GE-74	NS T1 (W-1)	batch_2	Week-1	y	4/15/25	non-survivor
+14124-GE-75	NS T2 (W-1)	batch_2	Week-1	y	4/27/25	non-survivor
+14124-GE-76	NS T3 (W-1)	batch_2	Week-1	y	4/13/25	non-survivor
+14124-GE-77	NS T4 (W-1)	batch_2	Week-1	y	4/5/25	non-survivor
+14124-GE-78	NS T5 (W-1)	batch_2	Week-1	y	4/22/25	non-survivor
+14124-GE-79	NS T6 (W-1)	batch_2	Week-1	y	4/1/25	non-survivor
+14124-GE-80	NS UT1 (W-1)	batch_2	Week-1	n	5/5/25	non-survivor
+14124-GE-81	NS UT2 (W-1)	batch_2	Week-1	n	4/15/25	non-survivor
+14124-GE-82	NS UT3 (W-1)	batch_2	Week-1	n	4/29/25	non-survivor
+14124-GE-83	NS UT4 (W-1)	batch_2	Week-1	n	4/8/25	non-survivor
+14124-GE-84	NS UT5 (W-1)	batch_2	Week-1	n	3/26/25	non-survivor
+14124-GE-85	NS T1 W1	batch_2	Week1	y	4/15/25	non-survivor
+14124-GE-50	NS T4 (W-3)	batch_2	Week-3	y	4/5/25	non-survivor
+14124-GE-55	NS UT4 (W-3)	batch_2	Week-3	n	4/8/25	non-survivor
+14124-GE-56	NS UT5 (W-3)	batch_2	Week-3	n	3/26/25	non-survivor

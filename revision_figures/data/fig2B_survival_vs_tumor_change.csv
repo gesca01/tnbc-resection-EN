@@ -1,0 +1,22 @@
+mouse,group,survival_weeks,percent_change_D7_D17,note
+NCT-1 A5,NonSurvivor,2.571,95.84,
+NA,NonSurvivor,3.000,-10,value estimated from the published plot
+NCT-1 A4,NonSurvivor,3.429,341.64,
+NCT-2 B5,NonSurvivor,3.571,307.54,
+NCT-1 A1,NonSurvivor,4.571,112.85,survival time estimated from the published plot
+NCT-2 B1,NonSurvivor,4.714,161.37,
+NCT-1 C4,NonSurvivor,5.571,53.28,
+NCT-1 A2,NonSurvivor,5.714,53.41,
+NCT-2 C2,NonSurvivor,6.000,26.98,
+NCT-1 C2,NonSurvivor,6.143,178.53,survival time estimated from the published plot
+NCT-2 A5,NonSurvivor,6.714,141.33,
+NCT-1 A3,Survivor,,50.66,
+NCT-1 B1,Survivor,,20.87,
+NCT-1 B2,Survivor,,-21.25,
+NCT-1 B3,Survivor,,139.96,
+NCT-1 B4,Survivor,,43.91,
+NCT-1 C3,Survivor,,130.32,
+NCT-1 C5,Survivor,,108.71,
+NCT-2,Survivor,,-22.2,
+NCT-2,Survivor,,-26.36,
+NCT-2,Survivor,,26.5,

@@ -1,0 +1,63 @@
+## The 30 pathways shown in Figures 4 and 6, grouped by category.
+## Category order here sets the order in both figures.
+
+CAT_LEVELS <- c("Inflammation and cytokines",
+                "Antigen Presentation & Recognition",
+                "Stress and metabolic adaptation")
+
+catalog30 <- data.frame(
+  pathway = c(
+    # - Inflammation and cytokines (11) --
+    "REACTOME_NEUTROPHIL_DEGRANULATION",
+    "HALLMARK_INFLAMMATORY_RESPONSE",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+    "REACTOME_INTERFERON_SIGNALING",
+    "REACTOME_ANTIVIRAL_MECHANISM_BY_IFN_STIMULATED_GENES",
+    "REACTOME_INTERFERON_ALPHA_BETA_SIGNALING",
+    "HALLMARK_COMPLEMENT",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+    "REACTOME_SIGNALING_BY_INTERLEUKINS",
+    # - Antigen Presentation & Recognition (9) --
+    "REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION",
+    "REACTOME_TCR_SIGNALING",
+    "REACTOME_DOWNSTREAM_SIGNALING_EVENTS_OF_B_CELL_RECEPTOR_BCR",
+    "REACTOME_MHC_CLASS_II_ANTIGEN_PRESENTATION",
+    "REACTOME_ANTIGEN_PROCESSING_UBIQUITINATION_PROTEASOME_DEGRADATION",
+    "REACTOME_IMMUNOREGULATORY_INTERACTIONS_BETWEEN_A_LYMPHOID_AND_A_NON_LYMPHOID_CELL",
+    "REACTOME_ANTIGEN_ACTIVATES_B_CELL_RECEPTOR_BCR_LEADING_TO_GENERATION_OF_SECOND_MESSENGERS",
+    "REACTOME_CD22_MEDIATED_BCR_REGULATION",
+    "REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION",
+    # - Stress and metabolic adaptation (10) --
+    "HALLMARK_HYPOXIA",
+    "REACTOME_AUTOPHAGY",
+    "REACTOME_METABOLISM_OF_POLYAMINES",
+    "HALLMARK_MTORC1_SIGNALING",
+    "HALLMARK_UNFOLDED_PROTEIN_RESPONSE",
+    "KEGG_LYSOSOME",
+    "KEGG_PROTEASOME",
+    "HALLMARK_GLYCOLYSIS",
+    "REACTOME_ASPARAGINE_N_LINKED_GLYCOSYLATION",
+    "REACTOME_CELLULAR_RESPONSE_TO_HYPOXIA"),
+  module = c(rep("Inflammation and cytokines", 11),
+             rep("Antigen Presentation & Recognition", 9),
+             rep("Stress and metabolic adaptation", 10)),
+  stringsAsFactors = FALSE)
+
+# The nine representative pathways drawn in the reduced panel B and outlined
+# in black on the panel A heatmaps. Unchanged by the OXPHOS removal.
+highlight_pathways <- c(
+  "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+  "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+  "REACTOME_SIGNALING_BY_INTERLEUKINS",
+  "REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION",
+  "REACTOME_CLASS_I_MHC_MEDIATED_ANTIGEN_PROCESSING_PRESENTATION",
+  "REACTOME_TCR_SIGNALING",
+  "HALLMARK_MTORC1_SIGNALING",
+  "REACTOME_CELLULAR_RESPONSE_TO_HYPOXIA",
+  "HALLMARK_UNFOLDED_PROTEIN_RESPONSE")
+
+stopifnot(nrow(catalog30) == 30L,
+          !"KEGG_OXIDATIVE_PHOSPHORYLATION" %in% catalog30$pathway,
+          all(highlight_pathways %in% catalog30$pathway))
