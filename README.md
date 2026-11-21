@@ -32,16 +32,17 @@ Manuscript_Revision_2026-07/gsea_rebuild/
                                    figure_gsea_pathway_activity_lineplots.R   GSVA single-sample pathway scores
                                    pathway_sets.R
 analysis_scripts/11_pathway_category_table.py   keyword rule -> process categories (Tables S3, S4)
-Figures_4_6_Catalog30/scripts/     pathway_sets_30.R (30-pathway catalog), make_figures_4_6.R (Figs 4, 6),
-                                   make_activity_trajectories.R (Fig S4), make_panelF_dotplot.R (Fig S3)
+Figures_4_6_Catalog30/scripts/     pathway_sets_30.R (the 30 pathways shown in Figs 4, 6, S3, S4)
 Day7_Treated_Signature_Applied_to_Untreated/scripts/   01, 02 + _day7_signature_common.R   day-7 signature transfer (Fig S3 inputs)
 Supplementary_Figure_Day7_Transfer/scripts/            S01, S02                              Fig S3 inputs
 survival/Survival_curve_bayes.R    Bayesian Cox model, treatment vs control (Fig 1E)
 revision_figures/
   data/                            dpcr_tdtomato_values.csv, fig2A_tumor_percent_change.csv,
                                    fig2B_survival_vs_tumor_change.csv, fig2C_ivis_image.png (IVIS image, panel C)
-  scripts/                         fig2_rebuild.R, fig3_revised.R, fig5_revised.R, figS1_permutation.R,
-                                   figS2_untreated.R, build_table_S4_xlsx.py, common.R
+  scripts/                         common.R (paths, dPCR helpers), house_style.R (shared figure style, matched to Fig 1)
+                                   fig2.R, fig3.R, fig5.R, figS1.R, figS2.R   Figs 2, 3, 5, S1, S2
+                                   fig4_fig6_figS3_figS4.R                    Figs 4, 6, S3, S4 (pathway figures)
+                                   build_table_S4_xlsx.py                     Supplementary Data 1 workbook
 data_raw/dpcr/                     QuantStudio Absolute Q run summaries (resection day, week 1)
 R_packages.csv                     package versions used
 LICENSE                            MIT
@@ -59,7 +60,8 @@ LICENSE                            MIT
 - `NCT_paper_pipeline/02_cache/`: elastic-net signatures, cross-validated scores and permutation nulls
 - `Manuscript_Revision_2026-07/gsea_rebuild/results/`: GSEA results for all contrasts
 - `analysis_results/`, `Day7_Treated_Signature_Applied_to_Untreated/results/`, `Supplementary_Figure_Day7_Transfer/data/` and `tables/`: intermediate tables
-- `*/figures/` and `revision_figures/Supplementary_Data_1_TableS4.xlsx`: figures and supplementary tables
+- `revision_figures/figures/`: the manuscript figures (Fig2.png ... FigS4.png)
+- `*/figures/` and `revision_figures/Supplementary_Data_1_TableS4.xlsx`: other figures and supplementary tables
 
 Run the scripts in the order below; the figure scripts read the outputs of the earlier steps.
 
@@ -85,11 +87,8 @@ Rscript Day7_Treated_Signature_Applied_to_Untreated/scripts/02_gsea_predicted_gr
 Rscript Supplementary_Figure_Day7_Transfer/scripts/S01_assemble_panel_data.R
 Rscript Supplementary_Figure_Day7_Transfer/scripts/S02_gsea_alignment.R
 
-# 4. figures and tables (fast)
-Rscript Figures_4_6_Catalog30/scripts/make_figures_4_6.R
-Rscript Figures_4_6_Catalog30/scripts/make_panelF_dotplot.R
-Rscript Figures_4_6_Catalog30/scripts/make_activity_trajectories.R
-for f in fig2_rebuild fig3_revised fig5_revised figS1_permutation figS2_untreated; do Rscript revision_figures/scripts/$f.R; done
+# 4. figures and tables (fast); figures are written to revision_figures/figures/
+for f in fig2 fig3 fig5 figS1 figS2 fig4_fig6_figS3_figS4; do Rscript revision_figures/scripts/$f.R; done
 python3 revision_figures/scripts/build_table_S4_xlsx.py
 Rscript survival/Survival_curve_bayes.R
 ```
@@ -100,8 +99,9 @@ Rscript survival/Survival_curve_bayes.R
 - **Day-7 / day-18 signatures:** limma moderated-t gene ranking performed **inside** each leave-one-out fold; elastic-net grid over K genes × α (ridge-like to lasso); LOOCV AUC with DeLong CI; 200-permutation label null repeating the full pipeline.
 - **Post-resection signature:** treated + untreated mice at week 1, mid and late post-resection (n = 59). Day-18-anchored frozen batch correction. Genes are ranked **once on the full cohort** (not per fold); the 500-permutation null repeats the same procedure, and its median AUC is 0.85.
 - **Timepoints:** for survivors, mid/late = weeks 4/8 after resection; for non-survivors, mid/late ≈ 3 and 1 weeks before death (metadata codes `Week4`/`Week8` vs `Week-3`/`Week-1`).
+- **Fig 3E risk scores:** taken from the elastic-net model fit on all treated mice, so the same mice build and evaluate the scores; the cross-validated performance is the leave-one-out ROC in Fig 3D. `fig3.R` also writes `Fig3_alt_crossvalidated_scores.png`, with the leave-one-out scores in panel E.
 - **GSEA:** DESeq2 Wald statistic ranked into fgsea on MSigDB Hallmark, KEGG (legacy) and Reactome (msigdbr 7.5.1), BH-adjusted. Negative NES = enriched in survivors.
 
 ## Requirements
 
-R 4.5 with the Bioconductor stack; exact versions are in `R_packages.csv`. `survival/Survival_curve_bayes.R` additionally needs `brms` and `posterior` (and a Stan toolchain). Python 3 with `openpyxl` for the Table S4 workbook.
+R 4.5 with the Bioconductor stack; exact versions are in `R_packages.csv`. `survival/Survival_curve_bayes.R` additionally needs `brms` and `posterior` (and a Stan toolchain). Python 3 with `openpyxl` for the Table S4 workbook. Figures use the Arial font.
